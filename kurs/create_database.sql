@@ -1,3 +1,4 @@
+
 CREATE TABLE department (
        id_dep               INTEGER NOT NULL,
        caption              VARCHAR(20) NOT NULL
@@ -22,7 +23,8 @@ CREATE TABLE students (
        id_student           INTEGER NOT NULL,
        name                 VARCHAR(20) NOT NULL,
        last_name            VARCHAR(20) NOT NULL,
-       surname              VARCHAR(20) NOT NULL
+       surname              VARCHAR(20) NOT NULL,
+       picture              BLOB()
 );
 
 
@@ -40,10 +42,11 @@ ALTER TABLE subjects
        ADD PRIMARY KEY (id_sub, name);
 
 
-CREATE TABLE tabel (
+CREATE TABLE table (
        id_note              INTEGER NOT NULL
 );
 
 
-ALTER TABLE tabel
+ALTER TABLE table
        ADD PRIMARY KEY (id_note);
+
