@@ -24,8 +24,6 @@ type
     procedure N6Click(Sender: TObject);
     procedure N9Click(Sender: TObject);
     procedure N10Click(Sender: TObject);
-    procedure N7Click(Sender: TObject);
-    procedure N8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +35,7 @@ var
 
 implementation
 
-uses Unit2, Unit3, Unit4, Unit5, Unit6;
+uses Unit2, Unit3, Unit4;
 
 {$R *.dfm}
 
@@ -59,16 +57,6 @@ end;
 procedure TForm1.N10Click(Sender: TObject);
 begin
 Form4.show;
-end;
-
-procedure TForm1.N7Click(Sender: TObject);
-begin
-form5.showmodal;
-end;
-
-procedure TForm1.N8Click(Sender: TObject);
-begin
-form6.showmodal;
 end;
 
 end.
